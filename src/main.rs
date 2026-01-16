@@ -9,7 +9,7 @@ struct Cli {
 }
 
 #[derive(Args, Debug)]
-#[group(required = false, multiple = false)]
+#[group(required = true, multiple = false)]
 struct OnOff {
     #[arg(long)]
     on: bool,
